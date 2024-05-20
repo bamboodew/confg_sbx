@@ -103,7 +103,8 @@
         "outbounds": [
           "auto",
           "direct",
-          "SV1_vless",
+          "SV1_vless",//第1次：被调用。proxy->SV1
+            
           "SV2_vless",
           "SV3_vmess",
           "SV4_vmess",
@@ -274,7 +275,8 @@
         "tag": "🇸🇬 狮城节点",
         "type": "selector",
         "outbounds": [
-          "SV1_vless",
+          "SV1_vless",//第2次：被调用
+            
           "SV2_vless",
           "SV3_vmess",
           "SV4_vmess",
@@ -324,7 +326,8 @@
         "tag": "auto",
         "type": "urltest",
         "outbounds": [
-            "SV1_vless",
+            "SV1_vless",//第3次：被调用
+            
             "SV2_vless",
             "SV3_vmess",
             "SV4_vmess",
@@ -348,7 +351,8 @@
         "tag": "block"
       },
       {
-        "tag": "SV1_vless",
+        "tag": "SV1_vless",//第4次：方法
+          
         "type": "vless",
         "server": "www.visa.com.tw", //修改优选ip或域名
         "server_port": 80, //端口可更改为80 8080 8880 2052 2086 2095
